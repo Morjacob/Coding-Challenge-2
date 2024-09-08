@@ -22,7 +22,7 @@ function calculateTip = (bill) {
 }
 
 let bill = 100
-let tip = bill(tip);
+let tip = tip(bill);
 console.log (`The tip for a $${100} bill is $${tip}`)
 
 
