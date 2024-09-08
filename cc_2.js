@@ -14,7 +14,7 @@ console.log(`The total value is $${316.25}`);
 
 // Create a function
 
-function calculateTip = (bill) {
+function calculateTip = (bill) => {
     let tip = [0.15, 0.20];
     let index = bill <= 50 ? 0 : (bill <= 100 ? 1 : 2 )
     let tip = bill * tip [index];
