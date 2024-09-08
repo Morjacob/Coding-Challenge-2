@@ -7,20 +7,20 @@ console.log (tip)
 
 
 // Output Details
-console.log(`The bill was $${275}`);
-console.log(`The tip was $${41.25} `);
-console.log(`The total value is $${316.25}`);
+console.log(`The bill was $${bill}`);
+console.log(`The tip was $${tip} `);
+console.log(`The total value is $${bill + tip}`);
 
 
 // Create a function
 
-const calculateTip = (bill) => {
-    const tipPercentages = (bill >= 50 && bill <= 300) ? 0.15 : 0.20;
-    const tip = bill * tipPercentages;
+const calculateTip = (billAmount) => {
+    const tipPercentages = (billAmount >= 50 && billAmount <= 300) ? 0.15 : 0.20;
+    const tip = billAmount * tipPercentages;
     return tip;
 
 }
-const testBill = 100
+const testBill = 100;
 const tip = calculateTip(testBill);
 console.log (`The tip for $${testBill} bill is $${tip.toFixed(2)}`);
 
