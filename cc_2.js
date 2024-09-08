@@ -21,12 +21,9 @@ const calculateTip = (billAmount) => {
 
 }
 const testBill = 100;
-const tip = calculateTip(testBill);
-console.log (`The tip for $${testBill} bill is $${tip.toFixed(2)}`);
+const calculatedTip = calculateTip(testBill);
+console.log (`The tip for $${testBill} bill is $${calculatedTip.toFixed(2)}`);
 
 
 // Utilize Arrays
 
-const bills = [275, 40, 430];
-const tips = bills.map(bill => calculateTip(bill));
-console.log(tips);
