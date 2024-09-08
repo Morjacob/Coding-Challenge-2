@@ -14,17 +14,28 @@ console.log(`The total value is $${bill + tip}`);
 
 // Create a function
 
-const calculateTip = (billAmount) => {
-    const tipPercentages = (billAmount >= 50 && billAmount <= 300) ? 0.15 : 0.20;
-    const tip = billAmount * tipPercentages;
+const calculateTip = (bill) => {
+    const tipPercentages = (bill >= 50 && bill <= 300) ? 0.15 : 0.20;
+    const tip = bill * tipPercentages;
     return tip;
 
 }
 const testBill = 100;
 const calculatedTip = calculateTip(testBill);
-console.log (`The tip for $${testBill} bill is $${calculatedTip}`);
+console.log (`The tip for a $${testBill} bill is $${calculatedTip}`);
 
 
-// Utilize Arrays
+// Utilize Arrays Using Test Data
+
+const bills [275, 40, 430];
+const tips = bills.map(bill => calculateTip(bill));
+const total = bills.map((bill,index) => bill + tips [index]);
+
+console.log (`Data Set 1:`);
+console.log(`Bills:`, bills);
+console.log(`Tips:`,tips);
+console.log(`Totals`, total);
+
+
 
 
