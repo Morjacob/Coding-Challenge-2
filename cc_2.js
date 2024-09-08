@@ -20,9 +20,9 @@ const calculateTip = (bill) => {
     return tip;
 
 }
-const bill = 100
-const tip = calculateTip(bill);
-console.log (`The tip for $${bill} bill is $${tip.toFixed(2)}`);
+const testBill = 100
+const tip = calculateTip(testBill);
+console.log (`The tip for $${testBill} bill is $${tip.toFixed(2)}`);
 
 
 // Utilize Arrays
