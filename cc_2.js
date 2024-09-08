@@ -21,7 +21,6 @@ const calculateTip = (bill) => {
     return tip;
 
 }
-const Bill = 100;
 const tips = bills.map(bill => calculateTip(bill));
 console.log(tips);
 
