@@ -1,6 +1,8 @@
 // Calculate the Tip
 
-let tip = (50 <= tip <= 300) ? "Leave 15% tip": "Leave 20% tip"
-
+const bill = x
+const tip = 50 <= X <= 300 ? x * 0.15 : x * 0.20;
 console.log (tip)
+
+
 
