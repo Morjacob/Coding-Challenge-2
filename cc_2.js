@@ -14,15 +14,16 @@ console.log(`The total value is $${316.25}`);
 
 // Create a function
 
-function calculateTip = (bill) => {
-    let tip = [0.15, 0.20];
-    let index = bill <= 50 ? 0 : (bill <= 100 ? 1 : 2 )
-    let tip = bill * tip [index];
-    return tip;
-}
 
-let bill = 100
-let tip = tip(bill);
-console.log (`The tip for a $${100} bill is $${tip}`)
+const calculateTip = (bill) => {
+    const tipPercentages = (bill >= 50 && bill <= 300) ? 0.15 : 0.20;
+    const tip = bill * tipPercentages;
+    return tip;
+
+}
+const Bill = 100;
+const tips = bills.map(bill => calculateTip(bill));
+console.log(tips);
+
 
 
