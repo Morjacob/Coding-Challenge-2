@@ -27,15 +27,21 @@ console.log (`The tip for a $${testBill} bill is $${calculatedTip}`);
 
 // Utilize Arrays Using Test Data
 
-let bills = [275, 40, 430];
-const tips = bills.map(bill => calculateTip(bill));
-const total = bills.map((bill,index) => bill + tips [index]);
+let bills1 = [275, 40, 430];
+const tips1 = bills.map(bill => calculateTip(bill));
+const total1 = bills.map((bill,index) => bill + tips [index]);
 
 console.log (`Data Set 1:`);
-console.log(`Bills:`, bills);
-console.log(`Tips:`,tips);
-console.log(`Totals`, total);
+console.log(`Bills:`, bills1);
+console.log(`Tips:`,tips1);
+console.log(`Totals`, total1);
 
 
+let bills2 = [125, 555, 44];
+const tips2 = bills.map(bill => calculateTip(bill));
+const total2 = bills.map((bill,index) => bill + tips [index]);
 
-
+console.log (`Data Set 2:`);
+console.log(`Bills:`, bills2);
+console.log(`Tips:`,tips2);
+console.log(`Totals`, total2);
